@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    top: 0;
+    padding: 0px 50px;
+}
+
+
+#logo {
+    margin-top: 10px;
+    margin-right: -10px;
+}
+
+#mcr {
+    width: 700px;
+    margin: 0 0 0 20px;
+}
+
+.main-col {
+    float: left;
+    width: 50%;
+}
+
+.main-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#mc365 {
+    font-size: 40px;
+    margin-bottom: -10px;
+}
+
+.main-row {
+    padding: 0px 100px;
+    justify-content: space-around;
+    background-color:  #e6e6e6;
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+    margin: 0 14px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #262626;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+}
+
+.left-p {
+    display: flex;
+}
+
+.info {
+    display: block;
+    width: 550px;
+    margin-top: 150px;
+}
+
+#off {
+    font-size: 20px;
+}
+
+
+.col {
+    display: inline;
+    width: 25%;
+}
+
+button {
+    width: 165px;
+    padding: 10px 10px;
+    margin-right: 10px;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: none;
+    font-weight: bold;
+}
+
+
+#mu {
+    background-color: black;
+    color: white;
+}
+
+#mu:hover {
+    box-shadow: 0 2px 4px rgb(0 0 0 /10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+#ou:hover {
+    text-decoration: underline;
+}
+
+.add-row {
+    padding: 50px 25px;
+    width: 100%;
+    display: flex;
+    font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.add-col {
+    width: 25%;
+}
+
+.add-col img {
+    width: 320px;
+}
+
+.add-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.add-row a {
+    color: #0067B8;
+    font-weight: bold;
+}
+
+.add-col h3 {
+    margin: 10px 0;
+    font-size: 28px;
+}
+
+.add-col p {
+    margin: 10px 0;
+}
+
+#enter:hover {
+    text-decoration: none;
+}
+
+#prod {
+    width: 170px;
+    padding: 0;
+    background-color: white;
+}
+
+#prod:hover {
+    text-decoration: underline;
+}
+
+#mgn {
+    margin-bottom: -5px;
+}
+#bsk {
+    margin-bottom: -2px;
+}

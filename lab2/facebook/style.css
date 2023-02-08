@@ -1,0 +1,179 @@
+body {
+    background-color: #f0f2f5;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+form {
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 /10%), 0 8px 16px rgb(0 0 0 / 10%);
+    margin: auto;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.create-page p a{
+    color: #1C1E21;
+    font-weight: bold;
+}
+
+input {
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 346px;
+    border-radius: 6px;
+    border: 1px solid #ecedee;
+    color: black;
+    margin:6px;
+}
+
+button {
+    padding: 14px 16px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin: 10px;
+}
+
+button.input-btn {
+    font-size: 20px;
+    width: 97%;
+    background-color: #3b8bf2;
+    margin: 10px 0px;
+}
+
+button.input-btn:hover {
+    background-color: #1876f0;
+}
+
+button.create-btn {
+    font-size: 17px;
+    background-color: #42b72a;
+}
+
+button.create-btn:hover {
+    background-color: #36a420;
+}
+
+#forgot {
+    font-size: 14px;
+}
+
+#forgot:link {
+    color: #1877F2;
+
+}
+
+#forgot:visited {
+    color: #1877F2;
+}
+
+.right-p {
+    width: 410px;
+    margin: auto;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.login-box {
+    border-radius: 6px;
+    padding: 10px 6px 24px;
+}
+
+
+.input-btn {
+    margin: auto;
+}
+
+hr {
+    margin: 10px 15px 20px;
+    color: #8A8D91;
+}
+
+.body-p {
+    display: flex;
+    margin: 120px 140px 0;
+    justify-content: space-around;
+}
+
+.left-p {
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.facebook-l {
+    width: 70%;
+    margin-left: -30px;
+    margin-bottom: -40px;
+}
+
+.intro-text {
+    font-size: 26px;
+    width: 450px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;;
+}
+
+.bottom {
+    background-color: white;
+    height: 130px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+ul {
+    margin: auto 255px;
+    font-size: 14px;
+}
+
+footer {
+    padding-top: 10px;
+    height: 120px   ;
+    color: #8A8D91;
+}
+
+li{
+    display: inline;
+    list-style-type: none;
+    margin: 8px;
+}
+
+li a:link {
+    color: #8A8D91;
+}
+
+li a:visited {
+    color: #8A8D91;
+}
+
+ul.add-b {
+    display: block;
+    height: 85px;
+    margin-bottom: -10px;
+}
+
+#divider {
+    margin: 10px 304px;
+}
+
+#meta {
+    margin: 0 303px 5px;
+    font-size: 14px;
+    height: 15px;
+}
+
+li #addl {
+    border: 1px solid #8A8D91;
+    padding: 0 3px;
+    color: #1C1E21;
+    font-weight: bold;
+    font-size: 16px;
+}
