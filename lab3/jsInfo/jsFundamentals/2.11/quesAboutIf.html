@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  if (-1 || 0) alert( 'first' ); //shown
+  if (-1 && 0) alert( 'second' );
+  if (null || -1 && 1) alert( 'third' ); //shown
+</script>
+</body>
+</html>

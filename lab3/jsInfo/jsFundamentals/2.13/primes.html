@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    let n = Number(prompt("give N", ''));
+
+    for(let i = 2; i <= n; i++) {
+      let prime = true;
+      for(let j = 2; j < i; j++) {
+        if(i % j == 0) {
+          prime = false;
+          break;
+        }
+      }
+      if(prime) alert(i);
+    }
+  </script>
+</body>
+</html>

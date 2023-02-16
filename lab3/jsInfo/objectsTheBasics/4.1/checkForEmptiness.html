@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    function isEmpty(obj) {
+      for (let key in obj) {
+        // if the loop has started, there is a property
+        return false;
+      }
+      return true;
+    }
+
+    alert(isEmpty(new Object()));
+  </script>
+</body>
+</html>

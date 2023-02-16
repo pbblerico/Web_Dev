@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let user = {
+    name: "John",
+    years: 30
+  };
+
+  let {name, years: age, isAdmin = false} = user;
+
+  alert( name ); // John
+  alert( age ); // 30
+  alert( isAdmin ); // false
+</script>
+</body>
+</html>
