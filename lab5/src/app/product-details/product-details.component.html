@@ -1,0 +1,11 @@
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price | currency }}</h4>
+  <div class="gallery" *ngFor="let p of product.pic" style="background-repeat:no-repeat">
+    <img class="image" [src]="p">
+  </div>
+  <p>{{ product.description }}</p>
+  <button type="button" (click)="addToCart(product)">Buy</button>
+</div>

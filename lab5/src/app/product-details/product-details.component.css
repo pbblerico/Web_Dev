@@ -1,0 +1,10 @@
+.gallery {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gallery img {
+    width: 30%;
+}

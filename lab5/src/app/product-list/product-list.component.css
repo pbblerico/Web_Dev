@@ -1,0 +1,97 @@
+.prod {
+    margin-bottom: 70px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30%;
+    flex-wrap: wrap;
+}
+
+h2 {
+    color: #4d1677;
+}
+
+.filter {
+    width: 100%;
+    display: flex;
+    margin: 10px;
+}
+
+.filter .toggle{
+    width: 150px;
+    height: 35px;
+    margin: 10px 30px; 
+    color: black;
+    background-color: rgb(233, 216, 249);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    background-color: white;
+    padding: 0  30px;
+    padding-bottom: 50px;
+}
+
+.inner {    
+    background-color: white;
+    padding: 0 10px;
+}
+
+h2 {
+    margin: 10px 40px 0;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.btns{
+    margin-top: 30px;   
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 0 50px; */
+}
+
+.btns button {
+    height: 35px;
+}
+
+app-product-alerts {
+    margin-top: -15px;
+}
+
+.like-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.first_col {
+    margin-top: 28px;
+}
+
+.like-btn p {
+    color: #a532ba;
+    border: 1px solid #a532ba;
+    padding: 7px 7px;
+}
+
+.like-btn button {
+    color: #a532ba;
+    border: 1px solid #a532ba;
+    padding: 5px 15px;
+    background-color: transparent;
+    color: black;
+    margin-right: 5px;
+}
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/

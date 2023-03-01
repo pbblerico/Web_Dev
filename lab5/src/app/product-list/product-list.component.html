@@ -1,0 +1,77 @@
+<h2>Products</h2>
+
+<div class="filter">
+    <select (change) = "updateView($any($event).target.value)" class="toggle">
+        <option value="None">None</option>
+        <option value="earphones">earphones</option>
+        <option value="TV">TV</option>
+        <option value="smartphone">smartphone</option>
+        <option value="laptop">laptop</option>
+        <option value="instrument">instrument</option>
+        <option value="watch">watch</option>
+    </select>
+</div>
+
+<div *ngFor="let product of filteredProducts" class="prod">
+
+    <div class="content">
+
+        <h3>
+            <a 
+                [title] = "product.name + ' details'"
+                [routerLink]="['/products', product.id]">
+                {{ product.name }}
+            </a>
+        </h3>
+
+        <div class="inner">
+
+            <p *ngIf="product.description">
+                Description: {{ product.description }}
+            </p>
+
+            <p *ngIf="product.rating">
+                rating: {{ product.rating }}
+            </p>    
+
+            <img class="image" [src]="product.pic[0]" width="250px">
+            
+        </div>
+
+        <div class="btns">
+
+            <div class="first_col">
+
+                <button type="button" (click)="share(product.name, product.url)">
+                    Share
+                </button>
+                
+                <div class="like-btn">
+                    <button type="button" (click)="like(product.id)">Like</button>
+                    <p> {{ product.likes }}</p>
+                </div>
+
+            </div>
+
+            <div class="second_col">
+
+                <app-product-alerts
+                [product]="product"
+                (notify)="onNotify()">
+                </app-product-alerts>   
+
+                <button type="button" (click)="deleteItem(product.id)">Delete</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
