@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+}
+
+body {
+    margin: 0 30px;
+}
+
+h1, body a {
+    color: rgb(97, 37, 153);
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}

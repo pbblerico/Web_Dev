@@ -1,0 +1,15 @@
+
+.info-page {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid black;
+    left: 33%;
+    position: absolute;
+}
+
+h1, a {
+    color: blueviolet;
+}

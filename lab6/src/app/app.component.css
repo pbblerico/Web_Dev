@@ -1,0 +1,11 @@
+header {
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+li {
+    list-style-type: none;
+    display: inline-flex;
+    margin-left: 25px;
+}

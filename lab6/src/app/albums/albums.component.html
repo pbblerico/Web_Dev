@@ -1,0 +1,18 @@
+<body>
+    <div class="top-bar">
+        <a routerLink="/home"> Go back</a>
+
+        <h2>Album list</h2>
+
+        <input type="text" placeholder="New Album" [(ngModel)]="newTitle"/>
+
+        <button type="button" (click)="addNewAlbum()">Create</button>
+
+    </div>
+
+
+    <div class="album-list" *ngFor="let album of albums">
+        <a routerLink='/albums/{{album.id}}'> {{album.id}} {{album.title}}</a>
+        <button type="button" (click)="deleteAlbum(album)">Delete</button>
+    </div>
+</body>
