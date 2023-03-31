@@ -17,7 +17,7 @@ def productById(request, id):
         if product['id'] == id: 
             return JsonResponse(product)
     
-    return {'error': 'no such id'}
+    return JsonResponse({'error': 'no such id'})
 
 def categories(request):
     return JsonResponse(categories_json, safe=False)
@@ -27,7 +27,7 @@ def categoryById(request, id):
         if category['id'] == id: 
             return JsonResponse(category)
     
-    return {'error': 'no such id'}
+    return JsonResponse({'error': 'no such id'})
 
 def productsByCategory(request, id):
     name = 'null'
