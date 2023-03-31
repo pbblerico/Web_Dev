@@ -30,14 +30,9 @@ def categoryById(request, id):
     return JsonResponse({'error': 'no such id'})
 
 def productsByCategory(request, id):
-    name = 'null'
-    for category in categories_json:
-        if category['id'] == id: 
-            name = category['name']
-
     categoryProducts = []
     for product in products_json:
-        if product['category'] == name: 
+        if product['category'] == id: 
             categoryProducts.append(product)
     
     
