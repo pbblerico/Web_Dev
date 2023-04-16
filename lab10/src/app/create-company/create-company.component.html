@@ -1,0 +1,28 @@
+<body>
+<div class="top-bar">
+  <a routerLink="/companies"> Go back</a>
+
+  <h2>Create Company</h2>
+
+</div>
+
+<div class="info-page">
+  <form class="create-box">
+    <div class="inputs">
+      <h5> Company Name</h5>
+      <input type="text" placeholder="Name" name="name" required [(ngModel)]="companyName"><br>
+      <h5> Company Description</h5>
+      <input type="text" placeholder="Description" name="city" required [(ngModel)]="companyDescription"><br>
+      <h5> Company City</h5>
+      <input type="text" placeholder="City" name="city" required [(ngModel)]="companyCity"><br>
+      <h5> Company Address</h5>
+      <input type="text" placeholder="Address" name="address" required [(ngModel)]="companyAddress"><br>
+    </div>
+
+    <button class="input-btn" type="submit" (click)="createCompany()">Create</button><br>
+
+
+  </form>
+</div>
+
+</body>

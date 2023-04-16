@@ -1,0 +1,22 @@
+<body>
+<div class="top-bar">
+  <a (click)="goBackToPrevPage()"> Go back</a>
+
+  <h2>Company list</h2>
+
+  <input id="find-input" type="text" placeholder="Find Company"/>
+
+  <button type="button" >Find</button>
+  <button type="button" routerLink="/companies/create">Create</button>
+
+</div>
+
+
+<div class="company-list" *ngFor="let company of companyList">
+  <div class="company">
+    <a routerLink='/companies/{{company.id}}'> {{company.name}}</a>
+  </div>
+  <button type="button" (click)="deleteCompany(company.id)">Delete</button>
+</div>
+</body>
+

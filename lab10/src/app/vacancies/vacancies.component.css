@@ -1,0 +1,35 @@
+body {
+  margin: 0 30px;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#find-input {
+  padding: 5px;
+  border-radius: 4px;
+}
+
+
+.vacancy-list {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+
+
+.vacancy-list a {
+  margin-right: 20px;
+}

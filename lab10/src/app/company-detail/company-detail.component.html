@@ -1,0 +1,45 @@
+<body>
+
+<div class="top-bar">
+    <a (click)="goBackToPrevPage()"> Go back</a>
+    <h1>Company info</h1>
+
+</div>
+
+<div *ngIf="loaded" class="content">
+
+  <div class="company-info">
+    <h2> {{ company.name }} </h2>
+    <div class="title">
+      <h3> <span> description: </span> {{company.description}} </h3>
+      <h3> <span>address: </span>{{company.address}}</h3>
+      <h3> <span>city: </span> {{company.city}}</h3>
+    </div>
+    <button type="button" routerLink="/companies/{{company.id}}/update">Update</button>
+  </div>
+
+
+  <div class="find-vacancy">
+    <h3> <span> {{company.name}} </span> vacancies:</h3>
+
+    <div class="find">
+      <input id="find-input" type="text" placeholder="Find Vacancy"/>
+      <button type="button" >Find</button>
+      <button type="button" routerLink="/vacancies/create">Create</button>
+    </div>
+
+  <div class="company-vacancies" *ngFor="let vacancy of vacancies">
+    <div class="vacancy">
+      <a routerLink='/vacancies/{{vacancy.id}}'> {{vacancy.name}}</a>
+      <button type="button" (click)="deleteVacancy(vacancy.id)">Delete</button>
+    </div>
+
+  </div>
+
+  </div>
+
+</div>
+
+<p *ngIf="!loaded"> Company is loading</p>
+
+</body>

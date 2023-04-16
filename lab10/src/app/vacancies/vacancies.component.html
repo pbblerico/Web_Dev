@@ -1,0 +1,22 @@
+<body>
+<div class="top-bar">
+  <a (click)="goBackToPrevPage()"> Go back</a>
+
+  <h2>Vacancy list</h2>
+
+  <input id="find-input" type="text" placeholder="Find Vacancy"/>
+
+  <button type="button" >Find</button>
+  <button type="button" routerLink="/vacancies/create">Create</button>
+</div>
+
+<div class="vacancy-list" *ngFor="let vacancy of vacancyList">
+  <div class="vacancy">
+    <a routerLink='/vacancies/{{vacancy.id}}'> {{vacancy.name}}</a>
+  </div>
+  <div class="delete-btn">
+    <button type="button" (click)="deleteVacancy(vacancy.id)">Delete</button>
+  </div>
+</div>
+
+</body>

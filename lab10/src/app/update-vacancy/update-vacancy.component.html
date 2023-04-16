@@ -1,0 +1,30 @@
+<body>
+<div class="top-bar">
+  <a (click)="goBackToPrevPage()"> Go back</a>
+
+  <h2>Update Vacancy</h2>
+
+</div>
+
+<div class="info-page">
+  <form class="create-box">
+    <div class="inputs">
+      <h5> Vacancy Name</h5>
+      <input type="text" placeholder="Name" name="name" required [(ngModel)]="vacancyName"><br>
+      <h5> Vacancy Description</h5>
+      <input type="text" placeholder="Description" name="description" required [(ngModel)]="vacancyDescription"><br>
+      <h5> Vacancy Salary</h5>
+      <input type="number" placeholder="City" name="city" required [(ngModel)]="vacancySalary"><br>
+      <h5> Vacancy Company</h5>
+      <select name="company" [(ngModel)]="companyId">
+        <option *ngFor="let company of companyList" [value]="company.id"> {{company.name}}</option>
+      </select>
+    </div>
+
+    <button class="input-btn" type="submit" (click)="updateVacancy()">Update</button><br>
+
+
+  </form>
+</div>
+
+</body>

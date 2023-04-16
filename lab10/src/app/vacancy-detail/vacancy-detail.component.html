@@ -1,0 +1,25 @@
+<body>
+
+<div class="top-bar">
+  <a (click)="goBackToPrevPage()"> Go back</a>
+  <h1>Vacancy info</h1>
+
+</div>
+
+<div *ngIf="loaded" class="content">
+
+  <div class="vacancy-info">
+    <h2> {{ vacancy.name }} </h2>
+    <div class="title">
+      <h3> <span> description: </span> {{vacancy.description}} </h3>
+      <h3> <span> salary: </span>{{vacancy.salary}}</h3>
+      <h3> <span> company: </span> <a routerLink="/companies/{{company.id}}" id="link-to-company">{{company.name}} </a> </h3>
+    </div>
+    <button type="button" routerLink="/vacancies/{{vacancy.id}}/update">Update</button>
+  </div>
+
+</div>
+
+<p *ngIf="!loaded"> Vacancy is loading</p>
+
+</body>

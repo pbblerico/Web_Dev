@@ -1,0 +1,28 @@
+<body>
+<div class="top-bar">
+  <a (click)="goBackToPrevPage()"> Go back</a>
+
+  <h2>Update Company</h2>
+
+</div>
+
+<div class="info-page">
+  <form class="create-box">
+    <div class="inputs">
+      <h5> Company Name</h5>
+      <input type="text" placeholder="Name" name="name" [(ngModel)]="companyName"><br>
+      <h5> Company Description</h5>
+      <input type="text" placeholder="Description" name="city" [(ngModel)]="companyDescription"><br>
+      <h5> Company City</h5>
+      <input type="text" placeholder="City" name="city" [(ngModel)]="companyCity"><br>
+      <h5> Company Address</h5>
+      <input type="text" placeholder="Address" name="address" [(ngModel)]="companyAddress"><br>
+    </div>
+
+    <button class="input-btn" type="submit" (click)="updateCompany()">Update</button><br>
+
+
+  </form>
+</div>
+
+</body>
